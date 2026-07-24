@@ -1,3 +1,48 @@
+:root {
+    --primary-color-purple50: hsl(260, 100%, 95%);
+    --primary-color-purple300: hsl(264, 82%, 80%);
+    --primary-color-purple500: hsl(263, 55%, 52%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-color-grey100: hsl(214, 17%, 92%);
+    --neutral-color-grey200: hsl(0, 0%, 81%);
+    --neutral-color-grey400: hsl(224, 10%, 45%);
+    --neutral-color-grey500: hsl(217, 19%, 35%);
+    --neutral-color-darkblue: hsl(219, 29%, 14%);
+    --neutral-color-black: hsl(0, 0, 7%);
+}
+
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("./fonts/BarlowSemiCondensed-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow Semi Condensed";
+    src: url("./fonts/BarlowSemiCondensed-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+body {
+    font-size: 13px;
+}
+
 .attribution { font-size: 0.6875rem; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 375px) {
+
+}
+
+@media (min-width: 1440px) {
+    
+}
