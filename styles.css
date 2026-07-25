@@ -32,7 +32,84 @@
 }
 
 body {
+    font-family: "Barlow Semi Condensed";
     font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-color-grey200);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 6em 3em;
+}
+
+.container__card {
+    padding: 3em 2.25em;
+    border-radius: 8px;
+}
+
+.card__author {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.author__icon {
+    border-radius: 100%;
+    width: 30px;
+    height: auto;
+}
+
+.author__verification {
+    font-size: 0.69rem;
+}
+
+.card__para {
+    margin-top: 1rem;
+}
+
+.para__main {
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.card--purple {
+    background-color: var(--primary-color-purple500);
+    color: var(--neutral-color-white);
+
+    .author__icon {
+        border: 1px solid var(--primary-color-purple300);
+    }
+}
+
+.card--grey {
+    background-color: var(--neutral-color-grey500);
+    color: var(--neutral-color-white);
+}
+
+.card--white {
+    background-color: var(--neutral-color-white);
+    color: var(--neutral-color-grey500);
+}
+
+.card--darkblue {
+    background-color: var(--neutral-color-darkblue);
+    color: var(--neutral-color-white);
+
+    .author__icon {
+        border: 1px solid var(--primary-color-purple500);
+    }
 }
 
 .attribution { font-size: 0.6875rem; text-align: center; }
@@ -44,5 +121,5 @@ body {
 }
 
 @media (min-width: 1440px) {
-    
+
 }
